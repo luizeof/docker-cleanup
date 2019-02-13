@@ -1,5 +1,7 @@
 # Docker Cleanup
 
+[![](https://images.microbadger.com/badges/image/luizeof/cleanup.svg)](https://microbadger.com/images/luizeof/cleanup "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/luizeof/cleanup.svg)](https://microbadger.com/images/luizeof/cleanup "Get your own version badge on microbadger.com")
+
 This service run `docker $cmd prune` command that allow automatic cleanup on docker.
 
 By default the following object **cmd** are pruned:
