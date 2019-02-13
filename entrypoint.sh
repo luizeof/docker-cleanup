@@ -3,14 +3,14 @@
 while true; do
 
     for parametro in $@; do
-        echo ">>> docker $parametro prune <<<"
+        echo ">>> Starting docker $parametro prune <<<"
         docker $parametro prune -f
-        echo
+        echo ">>> End docker $parametro prune <<<"
     done
 
-    if [ -n "$SLEEP" ]; then
-        echo "Sleeping for $SLEEP seconds..."
-        sleep "$SLEEP"
+    if [ -n "$PRUNE_DELAY" ]; then
+        echo "Waiting for $PRUNE_DELAY seconds..."
+        sleep "$PRUNE_DELAY"
         echo
     else
         exit 0
