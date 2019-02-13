@@ -1,8 +1,8 @@
 # Docker Cleanup
 
-This service run `docker $type prune` command that allow automatic cleanup on docker.
+This service run `docker $cmd prune` command that allow automatic cleanup on docker.
 
-By default the following object **types** are pruned:
+By default the following object **cmd** are pruned:
 
 - container
 - volume
