@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  docker_prune:
+    image: "luizeof/cleanup"
+    environment:
+      SLEEP: 3600
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    deploy:
+      mode: global
